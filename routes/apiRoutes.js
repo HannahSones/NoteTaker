@@ -2,7 +2,7 @@ const fs = require("fs");
 const notes = require("../db/db.json")
 
 
-module.exports = function(app) {
+module.exports = function (app) {
 
     app.get("/api/notes", function(req, res) {
         res.json(notes);
@@ -16,31 +16,23 @@ module.exports = function(app) {
 
         let newNote = req.body;
         let uniqueId = (notes.length).toString();
-        console.log(uniqueId);
         newNote.id = uniqueId;
         notes.push(newNote);
-        
-        fs.writeFileSync("./db/db.json", JSON.stringify(notes), function(err) {
-            if (err) throw (err);        
-        }); 
 
-        res.json(notes);    
+        fs.writeFileSync("./db/db.json", JSON.stringify(notes), function (err) {
+            if (err) throw (err);
+        });
+
+        res.json(notes);
 
     });
 
     app.delete("/api/notes/:id", function(req, res) {
 
-        let noteId = req.params.id;
-        let newId = 0;
-        console.log(`Deleting note with id ${noteId}`);
-        notes = notes.filter(currentNote => {
-           return currentNote.id != noteId;
-        });
-        for (currentNote of notes) {
-            currentNote.id = newId.toString();
-            newId++;
-        }
+        notes.splice(req.params.id, 1);
+        console.log("Deleted note with id " +req.params.id);
+
         fs.writeFileSync("./db/db.json", JSON.stringify(notes));
         res.json(notes);
-    }); 
+    });
 }

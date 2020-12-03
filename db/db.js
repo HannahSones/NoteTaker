@@ -1,4 +1,4 @@
-class Note {
+class noteArray {
     constructor(id, title, note) {
       (this.id = id),
       (this.title = title),
@@ -6,4 +6,4 @@ class Note {
     }
   }
   
-  module.exports = Note;
+  module.exports = noteArray;

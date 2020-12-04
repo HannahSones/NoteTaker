@@ -27,8 +27,7 @@ This note taker app uses HTML and API routes to save and retrieve note data from
 ----------
 
 ## Functionality  
-The following screen record video demonstrates the entirety of the app's functionality. To view the complete video, [click here](add)  
-
+The following screen record video demonstrates the entirety of the app's functionality.
 ![Note Taker video walk through](add)   
 
 The screenshot below displays an example of what the interface looks like when notes have been added.   
@@ -57,6 +56,7 @@ ADD HEROKU LINK
 
 -------------
 ## Further development
+* Create an additional database file which uses a class with a constructor to store the note data object.
 * Update the CSS styling to make the UI more engaging
 * Add a recycle bin function to restore previously deleted notes
 

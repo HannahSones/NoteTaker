@@ -30,7 +30,6 @@ module.exports = function (app) {
     app.delete("/api/notes/:id", function(req, res) {
 
         notes.splice(req.params.id, 1);
-        console.log("Deleted note with id " +req.params.id);
 
         fs.writeFileSync("./db/db.json", JSON.stringify(notes));
         res.json(notes);

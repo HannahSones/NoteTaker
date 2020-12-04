@@ -1,7 +1,7 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "An application that can be used to write, save, and delete notes using an express backend.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HannahSones/NoteTaker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HannahSones/NoteTaker/issues"
+  },
+  "homepage": "https://github.com/HannahSones/NoteTaker#readme"
 }

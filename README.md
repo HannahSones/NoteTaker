@@ -28,10 +28,10 @@ This note taker app uses HTML and API routes to save and retrieve note data from
 
 ## Functionality  
 The following screen record video demonstrates the entirety of the app's functionality.
-![Note Taker video walk through](add)   
+![Note Taker video walk through](https://github.com/HannahSones/NoteTaker/blob/main/NoteTaker%20App.gif)   
 
 The screenshot below displays an example of what the interface looks like when notes have been added.   
-![Note Taker preview](add)
+![Note Taker preview](https://github.com/HannahSones/NoteTaker/blob/main/NoteTaker%20app%20preview.png)
 
 -------------
 

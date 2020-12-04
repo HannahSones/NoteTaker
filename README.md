@@ -52,7 +52,7 @@ The screenshot below displays an example of what the interface looks like when n
 
 -------------
 ## Deployed live application
-ADD HEROKU LINK
+https://floating-hollows-66687.herokuapp.com/
 
 -------------
 ## Further development
